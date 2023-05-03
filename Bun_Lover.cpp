@@ -10,12 +10,11 @@ int main()
     {
         long long n,result=0;
         cin>>n;
-        for(long long i=1; i<n; i++){
-            result += i+(i-1);
-           // if(j<n-1) result += j;
-        }
+        result = ((n-1)*n)/2;
+        result = result+ ((n-2)*(n-1))/2;
         result = result + (4*n) + 1;
         cout<<result<<endl;
  
     }
 }
+
